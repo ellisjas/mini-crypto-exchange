@@ -1,0 +1,11 @@
+{
+  "prettier.configPath": "./app/.prettierrc.js",
+  "prettier.prettierPath": "./app/node_modules/prettier",
+  "prettier.ignorePath": "./app/.prettierignore",
+  "eslint.format.enable": true,
+  "prettier.requireConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "typescript.tsdk": "./app/node_modules/typescript/lib"
+}

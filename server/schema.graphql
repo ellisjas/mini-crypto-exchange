@@ -1,0 +1,53 @@
+# Root query
+type Query {
+  userId: ID!
+  portfolio: Portfolio
+  rewards: Int
+  ticker(pair: String!): Ticker!
+}
+
+extend type Query {
+  hideBalances: Boolean
+}
+
+# Represents a user's entire portfolio
+type Portfolio {
+  assets(kind: CurrencyKind): [PortfolioAsset!]
+  totalProfitOrLoss: Float!
+}
+
+type Mutation {
+  toggleHideBalances: Boolean
+}
+
+# Represents each cryptocurrency in a user's portfolio
+type PortfolioAsset {
+  id: ID!
+  quantity: Float
+  totalCost: Float
+  profitOrLoss: Float
+  currency: Currency
+  valueInAUD: Float!
+}
+
+# Represents each cryptocurrency available
+type Currency {
+  id: ID!
+  name: String
+  symbol: String
+  kind: CurrencyKind
+}
+
+enum CurrencyKind {
+  CRYPTO
+  FIAT
+}
+
+type Ticker {
+  pair: String!
+  last: Float!
+  volume: Float!
+  bid: Float!
+  ask: Float!
+  timestamp: String!
+}

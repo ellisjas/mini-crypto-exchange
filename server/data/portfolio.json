@@ -1,0 +1,88 @@
+{
+  "assets": [
+    {
+      "id": "p_1",
+      "symbol": "BTC",
+      "quantity": 0.43,
+      "profitOrLoss": 25000.0,
+      "currency": {
+        "id": "c_1",
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "kind": "CRYPTO"
+      }
+    },
+    {
+      "id": "p_2",
+      "symbol": "ETH",
+      "quantity": 2.8,
+      "profitOrLoss": 6002.0,
+        "currency": {
+            "id": "c_2",
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "kind": "CRYPTO"
+        }
+    },
+    {
+      "id": "p_3",
+      "symbol": "XRP",
+      "quantity": 3.5,
+      "profitOrLoss": 12311.0,
+        "currency": {
+            "id": "c_3",
+            "name": "Ripple",
+            "symbol": "XRP",
+            "kind": "CRYPTO"
+        }
+    },
+    {
+      "id": "p_4",
+      "symbol": "LTC",
+      "quantity": 525.0,
+      "profitOrLoss": -4512.0,
+        "currency": {
+            "id": "c_4",
+            "name": "Litecoin",
+            "symbol": "LTC",
+            "kind": "CRYPTO"
+        }
+    },
+    {
+      "id": "p_5",
+      "symbol": "SHIB",
+      "quantity": 275000.0,
+      "profitOrLoss": 6942.0,
+        "currency": {
+            "id": "c_5",
+            "name": "Shiba Inu",
+            "symbol": "SHIB",
+            "kind": "CRYPTO"
+        }
+    },
+    {
+      "id": "p_6",
+      "symbol": "AUD",
+      "quantity": 18500.0,
+      "profitOrLoss": -2515.0,
+        "currency": {
+            "id": "c_6",
+            "name": "Australian Dollar",
+            "symbol": "AUD",
+            "kind": "FIAT"
+        }
+    },
+    {
+      "id": "p_7",
+      "symbol": "USD",
+      "quantity": 5000.0,
+      "profitOrLoss": -1776.0,
+        "currency": {
+            "id": "c_7",
+            "name": "United States Dollar",
+            "symbol": "USD",
+            "kind": "FIAT"
+        }
+    }
+  ]
+}

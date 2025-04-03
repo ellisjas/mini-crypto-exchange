@@ -1,0 +1,13 @@
+{
+  "name": "mini-crypto-exchange",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jasmine Ellis <jasellis@pm.me>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for CoinJar Frontend technical interview",
+  "main": "index.js",
+  "license": "Copyright CoinJar Pty Ltd",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "graphql": "^16.8.0",
+    "graphql-ws": "^6.0.1",
+    "graphql-yoga": "^4.0.4",
+    "phoenix": "^1.7.18"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}
