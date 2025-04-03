@@ -1,10 +1,9 @@
 import React, { Suspense } from 'react';
-import { Platform, View } from 'react-native';
+import { View } from 'react-native';
 import { useFragment } from 'react-relay';
 import { graphql } from 'relay-runtime';
 import styled from 'styled-components/native';
-import Brand from '../../assets/images/Brand.svg';
-import Logo from '../../assets/images/Logo.svg';
+import Coinly from '../../assets/images/Coinly.svg';
 import { HeaderHomeFragment$key } from './__generated__/HeaderHomeFragment.graphql';
 import ProfitOrLoss from './ProfitOrLoss';
 
@@ -20,10 +19,10 @@ const HeaderTitle = styled(View)`
   position: relative;
 `;
 
-const wrapperStyle = {
-  marginTop: Platform.OS === 'android' ? 16 : 0,
-  marginBottom: 'auto',
-};
+const HeaderHomeContainer = styled(View)`
+  margintop: 0;
+  marginbottom: auto;
+`;
 
 const HeaderHomeFragment = graphql`
   fragment HeaderHomeFragment on Query {
@@ -35,14 +34,13 @@ export default function HeaderHome({ query }: Props) {
   const data = useFragment(HeaderHomeFragment, query);
 
   return (
-    <View style={wrapperStyle}>
+    <HeaderHomeContainer>
       <HeaderTitle>
-        <Logo height={40} style={{ position: 'absolute', left: -10 }} />
-        <Brand height={20} />
+        <Coinly height={20} />
       </HeaderTitle>
       <Suspense>
         <ProfitOrLoss query={data} />
       </Suspense>
-    </View>
+    </HeaderHomeContainer>
   );
 }

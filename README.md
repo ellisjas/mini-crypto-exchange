@@ -3,8 +3,8 @@
 A mini crypto exchange built using React Native, Typescript, and Relay.
 
 <div display="inline">
-  <img src="./screenshots/screenshot-home.png" alt="Home Screen" width="200" />
-  <img src="./screenshots/screenshot-accounts.png" alt="Accounts Screen" width="200" />
+  <img src="./screenshots/home.png" alt="Home Screen" width="200" />
+  <img src="./screenshots/accounts.png" alt="Accounts Screen" width="200" />
 </div>
 
 ## Getting Started
@@ -27,36 +27,14 @@ cd mini-crypto-exchange
 
 ### 2. Set up the server
 
-Navigate into the `server` directory:
-
 ```bash
-cd server
-```
-
-Install dependencies:
-
-```bash
-yarn
-```
-
-Start the server:
-
-```bash
-yarn start
+cd server && yarn && yarn start
 ```
 
 ### 3. Set up the client
 
-Navigate into the `app` directory:
-
 ```bash
-cd app
-```
-
-Install dependencies:
-
-```bash
-yarn
+cd app && yarn
 ```
 
 Start Relay compiler in watch mode:

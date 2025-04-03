@@ -6,12 +6,6 @@ const domain = Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
 // Define a function that fetches the results of an operation (query/mutation/etc)
 // and returns its results as a Promise:
 export function fetchQuery(operation: any, variables: any) {
-  console.log('Sending GraphQL Request:', {
-    operationName: operation.name,
-    variables,
-    query: operation.text,
-  });
-
   return fetch(`http://${domain}:4000/graphql`, {
     method: 'POST',
     headers: {
@@ -23,12 +17,9 @@ export function fetchQuery(operation: any, variables: any) {
     }),
   })
     .then((response) => response.json())
-    .then((json) => {
-      console.log('Received GraphQL Response:', json);
-      return json;
-    })
+    .then((json) => json)
     .catch((error) => {
-      console.log(error);
+      console.error(error);
     });
 }
 
