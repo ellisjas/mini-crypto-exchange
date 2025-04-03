@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
     "ios": "cd ios && pod install && cd - && react-native run-ios",
     "ios:clean": "cd ios && rm -rf build Pods && pod deintegrate && pod cache clean --all && pod install && cd -",
     "lint": "eslint .",

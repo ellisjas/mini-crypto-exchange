@@ -2,7 +2,6 @@ import {
   BottomTabNavigationOptions,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
-import { ParamListBase, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import { Platform, Text } from 'react-native';
 import { useLazyLoadQuery } from 'react-relay';
@@ -18,10 +17,7 @@ import type { TabsRootQuery as TabsRootQueryType } from './__generated__/TabsRoo
 
 type TabName = 'Home' | 'Accounts';
 
-type ScreenOptionsHandler = (props: {
-  route: RouteProp<ParamListBase, string>;
-  navigation: any;
-}) => BottomTabNavigationOptions;
+type ScreenOptionsHandler = () => BottomTabNavigationOptions;
 
 const Tab = createBottomTabNavigator();
 
